@@ -1,17 +1,11 @@
 import { createGlobalStyle } from "styled-components"
-import { styleColors } from "../variables"
+import { deviceBreakpoint, styleColors } from "../variables"
 
-export const GlobalStyle = ({children}) => {
+export const GlobalStyle = () => {
     return <StyledGlobalStyle />
 }
 
 const StyledGlobalStyle = createGlobalStyle`
-
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
 
     html {
         font-size: 62.5%;
@@ -26,8 +20,7 @@ const StyledGlobalStyle = createGlobalStyle`
         font-family: 'Poppins', sans-serif;
     }
     
-    input {
-        
+    input {    
         border: 1px solid ${styleColors.inputBorderColor};
         padding: 1.5rem 7rem 1.5rem 2rem;
         border-radius: 0.5rem;
@@ -41,26 +34,7 @@ const StyledGlobalStyle = createGlobalStyle`
     input:focus:not(input[type=submit]) {
         border-color: ${styleColors.accentColorBlue};
     }
-
-    input, textarea
-    {
-        margin: 0;
-        border: 0;
-        padding: 0;
-        display: inline-block;
-        vertical-align: middle;
-        white-space: normal;
-        background: none;
-        line-height: 1;
-        font-size: 13px;
-        font-family: 'Roboto', sans-serif;
-    }
-
-    input:focus
-    {
-        outline:0;
-    }
-    
+  
     h1 {
         font-size: 5rem;
         font-weight: 700;
@@ -70,8 +44,9 @@ const StyledGlobalStyle = createGlobalStyle`
         font-size: 1rem;
     }
 
-    a {
-        text-decoration: none;
-        color: black;
+    @media (max-width: ${deviceBreakpoint.tablet}) {
+        h1 {
+            font-size: 2.5rem;
+        }
     }
 `

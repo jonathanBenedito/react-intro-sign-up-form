@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+<h1 align="center">
+  Frontend Mentor - Intro component with sign up form
+</h1>
+<p align="center">
+    É um <a href="https://jonathanbenedito.github.io/intro-sign-up-form/" target="_blank">website</a> que contém um formulário de cadastro com validação de email e campos não preenchidos. Desenvolvido para um <a href="https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1">desafio do Frontend Mentor</a>.
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![demo](design/desktop-layout.png)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-## Available Scripts
+## 💬 Sobre o projeto
 
-In the project directory, you can run:
+### O desafio
 
-### `npm start`
+A proposta é construir uma landing page com um formulário que faça validação por Javascript no lado do cliente. Ao clicar no botão para enviar o formulário, o sistema precisará checar por:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Campos não preenchidos;
+- E-mail no formato incorreto;
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+O sistema irá emitir feedback de erro ao usuário caso detecte algum erro. O layout deve ser o mais próximo possível do design fornecido pelo desafio e ser responsivo para diferentes tamanhos de tela.
 
-### `npm test`
+## 🛠 Guia de instalação
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Faça o clone do projeto
+    ```
+    git clone https://github.com/jonathanBenedito/intro-sign-up-form.git
+    ```
 
-### `npm run build`
+2. Acesse o repositório
+    ```
+    cd intro-sign-up-form
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Fotos (Mobile)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| <img alt="news homepage mobile showcase" src="design/smartphone-layout.png" height="450" /> | <img alt="news homepage on tablet" src="design/demonstracao-validacao.gif" height="450"/> |
+|:---:|:---:|
+| Smartphone | Demonstração |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🔗 Links
 
-### `npm run eject`
+Website: <a href="https://jonathanbenedito.github.io/intro-sign-up-form/">jonathanbenedito.github.io/intro-sign-up-form</a><br />
+Desafio do Frontend Mentor: <a href="https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1">frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1</a>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 🧱 Tecnologias
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+O website foi construído usando HTML 5, CSS 3 e Javascript.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<div style="display: flex; margin-top: 15px; gap: 20px;">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" width="64" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width="64" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="64"/>        
+</div>

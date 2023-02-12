@@ -19,4 +19,9 @@ const styleColors = {
     boxShadowColor: 'rgba(0, 0, 0, 0.144)'
 }
 
-export { styleColors }
+const deviceBreakpoint = {
+    tablet: '1000px',
+    mobile: '475px'
+}
+
+export { styleColors, deviceBreakpoint }

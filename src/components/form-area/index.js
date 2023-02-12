@@ -1,7 +1,7 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import styled, { css } from "styled-components"
 import validator from "validator"
-import { styleColors } from "../../variables"
+import { deviceBreakpoint, styleColors } from "../../variables"
 
 export const FormArea = () => {
 
@@ -61,8 +61,9 @@ export const FormArea = () => {
                                 placeholder="First Name"
                                 value={signupInput.firstName}
                                 onChange={handleChange}
+                                thereAnyErrors={errors.firstName !== ""}
                             />
-                            <ErrorIcon thereAnyErrors={!errors.firstName === ""} />
+                            <ErrorIcon thereAnyErrors={errors.firstName !== ""} />
                         </InputArea>
                         <InputFeedback>{errors.firstName}</InputFeedback>
                     </Field>
@@ -75,8 +76,9 @@ export const FormArea = () => {
                                 placeholder="Last Name"
                                 value={signupInput.lastName}
                                 onChange={handleChange}
+                                thereAnyErrors={errors.lastName !== ""}
                             />
-                            <ErrorIcon />
+                            <ErrorIcon thereAnyErrors={errors.lastName !== ""} />
                         </InputArea>
                         <InputFeedback>{errors.lastName}</InputFeedback>
                     </Field>
@@ -89,8 +91,9 @@ export const FormArea = () => {
                                 placeholder="Email Address"
                                 value={signupInput.email}
                                 onChange={handleChange}
+                                thereAnyErrors={errors.email !== ""}
                             />
-                            <ErrorIcon />
+                            <ErrorIcon thereAnyErrors={errors.email !== ""} />
                         </InputArea>
                         <InputFeedback>{errors.email}</InputFeedback>
                     </Field>
@@ -104,8 +107,9 @@ export const FormArea = () => {
                                 autocomplete="on"
                                 value={signupInput.password}
                                 onChange={handleChange}
+                                thereAnyErrors={errors.password !== ""}
                             />
-                            <ErrorIcon />
+                            <ErrorIcon thereAnyErrors={errors.password !== ""} />
                         </InputArea>
                         <InputFeedback>{errors.password}</InputFeedback>
                     </Field>
@@ -147,6 +151,20 @@ const TryButton = styled.a`
     b {
         font-weight: 600;
     }
+
+    @media (max-width: ${deviceBreakpoint.tablet}) {
+        padding: 1.5rem 5rem;
+        font-weight: 400;
+        margin-bottom: 2rem;
+        font-size: 1.4rem;
+    }
+
+    @media (max-width: ${deviceBreakpoint.mobile}) {
+        padding: 1.5rem 5rem;
+        font-weight: 400;
+        margin-bottom: 2rem;
+        font-size: 1.6rem;
+    }
 `
 
 const Card = styled.div`
@@ -154,6 +172,10 @@ const Card = styled.div`
     border-radius: 1rem;
     background-color: ${styleColors.cardBackgroundColor};
     padding: 3rem;   
+
+    @media (max-width: ${deviceBreakpoint.tablet}) {
+        padding: 2rem;
+    }
 `
 
 const Field = styled.div`
@@ -163,11 +185,15 @@ const Field = styled.div`
 
 const InputArea = styled.div`
     position: relative;
-    margin-bottom: 0.5rem;
 `
 
 const Input = styled.input`
     width: 100%;
+    
+    ${props => props.thereAnyErrors && css` 
+        border-color: ${styleColors.primaryColorRed};
+    `}
+    
 `
 
 const ErrorIcon = styled.span`
@@ -197,8 +223,7 @@ const SubmitButton = styled.input`
     font-weight: 600;
     font-size: 1.4rem;  
     border-bottom: 3px solid ${styleColors.submitBorderColor};
-    padding-bottom: 1.5rem;
-    padding-top: 2rem;
+    padding: 2rem 0 1.5rem 0;
     letter-spacing: 0.1rem;
     margin-bottom: 1rem;
     cursor: pointer;
