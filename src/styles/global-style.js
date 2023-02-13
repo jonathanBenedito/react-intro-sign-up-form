@@ -6,6 +6,21 @@ export const GlobalStyle = () => {
 }
 
 const StyledGlobalStyle = createGlobalStyle`
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    input:focus
+    {
+        outline:0;
+    }
 
     html {
         font-size: 62.5%;
