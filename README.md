@@ -2,7 +2,7 @@
   Intro Component with Signup Form - React Version
 </h1>
 <p align="center">
-    É um <a href="https://jonathanbenedito.github.io/intro-sign-up-form/" target="_blank">website</a> que contém um formulário de cadastro com validação de email e campos não preenchidos. Desenvolvido para um <a href="https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1">desafio do Frontend Mentor</a>.
+    É um <a href="https://react-intro-sign-up-form.vercel.app/" target="_blank">website</a> que contém um formulário de cadastro com validação de email e campos não preenchidos. Desenvolvido para um <a href="https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1">desafio do Frontend Mentor</a>.
 </p>
 
 ![demo](design/desktop-layout.png)
@@ -62,5 +62,5 @@ O sistema irá emitir feedback de erro ao usuário caso detecte algum erro. O la
 
 ### 🔗 Links
 
-Website: <a href="https://jonathanbenedito.github.io/intro-sign-up-form/">jonathanbenedito.github.io/intro-sign-up-form</a><br />
+Website: <a href="https://react-intro-sign-up-form.vercel.app/">react-intro-sign-up-form.vercel.app</a><br />
 Desafio do Frontend Mentor: <a href="https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1">frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1</a>
